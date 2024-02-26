@@ -56,7 +56,8 @@ struct ProfileView: View {
         
         TLButton(
             title: "Log Out",
-            background: .blue
+            background: .white,
+            textColor: .red
             ) {
                 viewModel.logOut()
             }

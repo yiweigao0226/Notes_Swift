@@ -35,7 +35,8 @@ struct LoginView: View {
                     
                     TLButton(
                         title: "Log In",
-                        background: .blue
+                        background: .blue,
+                        textColor: .white
                         ) {
                             viewModel.login()
                         }

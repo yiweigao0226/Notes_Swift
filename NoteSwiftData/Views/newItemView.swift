@@ -26,7 +26,8 @@ struct newItemView: View {
                 //Button
                 TLButton(
                     title: "Save",
-                    background: .pink
+                    background: .pink,
+                    textColor: .white
                 ) {
                     if viewModel.canSave {
                         viewModel.save()

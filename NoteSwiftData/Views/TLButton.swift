@@ -10,6 +10,7 @@ import SwiftUI
 struct TLButton: View {
     let title: String
     let background: Color
+    let textColor: Color
     let action: () -> Void
     
     
@@ -23,7 +24,7 @@ struct TLButton: View {
                     .foregroundColor(background)
                 
                 Text(title)
-                    .foregroundColor(.white)
+                    .foregroundColor(textColor)
                     .bold()
             }
         }
@@ -32,7 +33,9 @@ struct TLButton: View {
 
 #Preview {
     TLButton(title: "Value",
-             background: .pink) {
+             background: .pink,
+             textColor: .white
+    ) {
         // Action
     }
 }
